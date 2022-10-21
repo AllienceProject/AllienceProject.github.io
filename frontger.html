@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ger">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,121 +10,113 @@
 
     <style>
 
-        *{
-                background-color: aliceblue;
-                line-height: 1.3;
-                
-        }
-        #header{
-           font-size: larger;
-           padding-left: 500px;
-           font-weight: bold;
-           font-family: Arial, Helvetica, sans-serif;
-           
-        }
-        #text_two{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-        }
+        body{
+            background-color:   #14191d;
 
-        #text_one{
-            margin-top: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            display: inline-block;
-            white-space:nowrap;
-            font-size: 16px;
+        }
+        .wrapper{
+            text-align:center;
+            background-color:   #14191d;
+            margin: 20px 200px;
+            display: grid;
+            row-gap: 40px;
+        }
+       
+        .navbar{
+            border-bottom: 2px solid grey;
+        }
+        p, li{
+            color: grey;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: grey;
+        }
+        .introtext{
+            padding-bottom: 50px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        .lasertext{
             
+            padding: 0;
+            border-radius: 5px;
+            border: 1px solid grey;
+
         }
-        #image{
-            display: inline-block;
-            margin-top: 10px;
-        }
-        p{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-        }
-        #myList{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
+        .lasertext a{
             
+            color: grey;
         }
-        #mySpan{
-            margin-left: 5em;
-        }
-        #languageEng{
+        .threejstext{
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 0px 10px;
 
-            font-family: Arial, Helvetica, sans-serif;
-
         }
-        #languagaeGer{
-            margin-left: .8em;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
-    <div ><span id="header">
-        Allience - 3D Scanning Project </span>
-     
-     <span id="lanuageEng " style="margin-left: 37em;">
-        <a href="fronteng.html" >English</a>
-      </span>
-      <span id="languagaeGer"><a href="frontger.html" >German</a></span>
-    </div>
-   
-   
-    
         
-            <div id="text_one" > 
-                <p >
-                    Dieses Projekt ist unter der Leitung von Prof. Dr.-Ing. habil. Hein im Rahmen des Moduls Projektmanagement entstanden. <br>
-                    Prof. Dr.-Ing. habil. Hein und Prof. DR.-Ing. Wurll leiten gemeinsam das Labor für Robotik und Automatisierung. <br>    
-                    Dieses war ursprünglich im K-Gebäude der Hochschule angesiedelt und zieht jetzt (Sommersemester 2021) in den neuen
-                     Campus der Hochschule (HKA 2030+/ TP) um. <br> Der neue Campus wird somit den neuen Master Studiengang
-                      „Robotik und künstliche Intelligenz in der Produktion“ und das Labor für Robotik und Automatisierung beheimaten, <br> 
-                      wodurch Studenten zukünftig praxisnah lernen und forschen können.
-                    </p>
-            </div>
-      <div><img id= "image" src="Bild1.jpg" width="605" height="356" alt="Picture of LTC-Building"></div>
-      <div id="text_two" > 
-        <p >Das neue Labor wird aus drei Räumen bestehen, welche wie folgt genutzt werden:</p>
-    </div>
+        .threejstext a{
+            color: grey;
+    }
+    </style>
+    <nav class="navbar">
+        <a href="frontger.html">German</a>
+        <a href="index.html">English</a>
+    </nav>
     
-    <img src="Bild2.jpg" width="693" height="576" alt="Blender File">
-
-    <div><p>Wir sind eine Gruppe bestehend aus vier Studenten. 
-        Die Idee von uns und unseren Professoren war es die neuen Räumlichkeiten des Labors mithilfe eines 3D-Scanners zu erfassen. <br>
-        Unsere Arbeit soll hierbei lediglich eine Basis sein, auf der zukünftige Teams aufbauen können.
-
-        Für unseren Scan haben wir folgenden Scanner verwendet:
-        <br>
-       <a href="https://www.laserscanning-europe.com/sites/default/files/redakteur_images/Focus%20S%20150%20Technisches%20Datenblatt.pdf">https://www.laserscanning-europe.com/sites/default/files/redakteur_images/Focus%20S%20150%20Technisches%20Datenblatt.pdf</a> 
-        <p>Dadurch war es uns möglich folgende Datei zu erstellen:</p>
-      
-    </p></div>
+   
+    
+        <div class="wrapper">
+            <div class="introtext">
+                <img id= "image" src="Bild1.jpg" width="605" height="356" alt="Picture of LTC-Building" style="float: left; margin: 0px 10px;">
+                <p align="left" >
+                    Dieses Projekt ist unter der Leitung von Prof. Dr.-Ing. habil. Hein im Rahmen des Moduls Projektmanagement entstanden. 
+                    Prof. Dr.-Ing. habil. Hein und Prof. DR.-Ing. Wurll leiten gemeinsam das Labor für Robotik und Automatisierung. 
+                    Dieses war ursprünglich im K-Gebäude der Hochschule angesiedelt und zieht jetzt (Sommersemester 2021) in den neuen
+                     Campus der Hochschule (HKA 2030+/ TP) um.  Der neue Campus wird somit den neuen Master Studiengang
+                      „Robotik und künstliche Intelligenz in der Produktion“ und das Labor für Robotik und Automatisierung beheimaten, 
+                      wodurch Studenten zukünftig praxisnah lernen und forschen können. <br>
+                      Wir sind eine Gruppe bestehend aus vier Studenten. 
+                    Die Idee von uns und unseren Professoren war es die neuen Räumlichkeiten des Labors mithilfe eines 3D-Scanners zu erfassen. <br>
+                    Unsere Arbeit soll hierbei lediglich eine Basis sein, auf der zukünftige Teams aufbauen können.
+                    </p>
+                </div>
+    <div class="lasertext">
+        <p align="middle">Für unseren Scan haben wir folgenden <a href="https://www.laserscanning-europe.com/sites/default/files/redakteur_images/Focus%20S%20150%20Technisches%20Datenblatt.pdf">Scanner</a> verwendet.
+        Dadurch war es uns möglich folgende Datei zu erstellen:
+    </p>
     <img src="spinning_rotation.gif" alt="">
-    <p>Wenn du unser Projekt gerne anschauen möchtest, kannst du unsere virtuelle Tour nutzen. Klicke dazu einfach auf die unteren Links. <br>
+</div>
+
+<div class="threejstext">
+    <p align="left">Wenn du unser Projekt gerne anschauen möchtest, kannst du unsere virtuelle Tour nutzen. Klicke dazu einfach auf die unteren Links. <br>
 
        Wir haben zwei verschiedene Steuerungen implementiert. Gerne kannst du beide ausprobieren und uns Feedback dazu geben.
-        <br> <br>
-        
-        <br>
+      
         Mit den <a href="index.html" target="_blank">First Person Controls</a>  kannst du dich selber in der Szene bewegen. Dies kannst du mit folgenden Befehlen tun: 
         </p>
     <div id="myList">
-    <ul>
-        <li>Du kannst dein Sichtfeld mit der Maus steuern.</li>
+        <ul align="left">
+            <li>Du kannst dein Sichtfeld mit der Maus steuern.</li>
         <li>Klicke auf die linke Maustaste, um dich nach vorne zu bewegen.</li>
         <li>Klicke auf die rechte Maustaste, um dich nach hinten zu bewegen. </li>
       </ul> </div>
-      <p>
+      <p align="left">
           Mit den <a href="orbitControl.html"target="_blank">Orbit Controls</a>  kannst du die Szene umkreisen. Um das zu tun, kannst du folgende Befehle nutzen:
 
       </p>
       <div id="myList">
-      <ul>
-        <li>Mit der linken Maustaste kannst du um das Objekt rotieren.</li>
+        <ul align="left">
+            <li>Mit der linken Maustaste kannst du um das Objekt rotieren.</li>
         <li>Mit der rechten Maustaste kannst du die Kamera in der Szene bewegen.</li>
         <li>Mit deinem Mausrad kannst du ein- und auszoomen.</li>
       </ul> </div>
-    <p> Vielen Dank für das Besuchen unserer Website. Wir würden uns freuen, wenn du dir kurz Zeit nehemen würdest diese <a href="https://forms.gle/cFdj17yK4VafWXBS8" target="_blank">Umfrage</a> auszufüllen. </p>
+    <p align="left"> Vielen Dank für das Besuchen unserer Website. Wir würden uns freuen, wenn du dir kurz Zeit nehemen würdest diese <a href="https://forms.gle/cFdj17yK4VafWXBS8" target="_blank">Umfrage</a> auszufüllen. </p>
+</div>
+</div>
 </body>
 </html>

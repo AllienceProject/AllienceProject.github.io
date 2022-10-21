@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ger">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,114 @@
     <title>Allience!</title>
 </head>
 <body>
+
+    <style>
+
+        body{
+            background-color:   #14191d;
+
+        }
+        .wrapper{
+            text-align:center;
+            background-color:   #14191d;
+            margin: 20px 200px;
+            display: grid;
+            row-gap: 40px;
+        }
+       
+        .navbar{
+            border-bottom: 2px solid grey;
+        }
+        p, li{
+            color: grey;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: grey;
+        }
+        .introtext{
+            padding-bottom: 50px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        .lasertext{
+            
+            padding: 0;
+            border-radius: 5px;
+            border: 1px solid grey;
+
+        }
+        .lasertext a{
+            
+            color: grey;
+        }
+        .threejstext{
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 0px 10px;
+
+        }
+        
+        .threejstext a{
+            color: grey;
+    }
+    </style>
+    <nav class="navbar">
+        <a href="frontger.html">German</a>
+        <a href="index.html">English</a>
+    </nav>
     
-    <canvas id="myCanvas"></canvas>
+   
     
-    <script src = "lib/three.js"></script>
-    <script  src="/lib/OBJLoader.js"></script>
-    <script src="lib/OrbitControls.js"></script>
-    <script src="lib/MTLLoader.js"></script>
-    <script src="lib/FirstPersonControl.js"></script>
-    <script  src = "code.js"></script>
+        <div class="wrapper">
+            <div class="introtext">
+                <img id= "image" src="Bild1.jpg" width="605" height="356" alt="Picture of LTC-Building" style="float: left; margin: 0px 10px;">
+                <p align="left" >
+                    This project was developed under the supervision of Prof. Dr.-Ing. habil. Hein as part of
+                     the project management module.  Prof. Dr.-Ing. habil. Hein and Prof. Wurll jointly head the Robotics and Automation Laboratory.
+                      This was originally located in the K building of the university and is now (summer semester 2021) moving to the new campus of the 
+                      university (HKA 2030+/ TP). The new campus will thus be home to the new Master's programme "Robotics and Artificial Intelligence in 
+                      Production" and the Robotics and Automation Laboratory
+                    , which will enable students to learn and research in a practical way in the future.
+                    We are a group of four students. The idea of us and our professors was to capture the new premises of the laboratory 
+        with the help of a 3D scanner. <br>Our work should only be a basis on which future teams can build.
+                </div>
+    <div class="lasertext">
+        <p align="middle">We used the following<a href="https://www.laserscanning-europe.com/sites/default/files/redakteur_images/Focus%20S%20150%20Technisches%20Datenblatt.pdf">scanner</a> for our scan.
+    This enabled us to create the following file:    </p>
+    <img src="spinning_rotation.gif" alt="">
+</div>
+
+<div class="threejstext">
+    <p align="left">If you want to check out our Project you can take a look at our virtual tour. Just click on the link and enjoy. <br>
+
+        We have implemented two controls. Feel free to try out both and give us your feedback on what you liked more.
+      
+        Our first controls is the <a href="firstPerson.html" target="_blank">First Person Control</a>. This lets you navigate pretty freely around the scene.
+        <br>You can navigate yourself using the following commands: 
+        </p>
+    <div id="myList">
+    <ul align="left">
+        <li>You can change your view by moving your mouse.</li>
+        <li>Click on the left mouse button to move forward.</li>
+        <li>Click on the right mouse button to move backwards.</li>
+      </ul> </div>
+      <p align="left">
+        Our second controls is the <a href="orbitControl.html" target="_blank">Orbit Control</a>. This lets you orbit around a targeted object. <br>
+        Use the following commands to use it:
+      </p>
+      <div id="myList">
+        <ul align="left">
+            <li>Use your left mouse button to rotate the object.</li>
+        <li>Use your right mouse button to move the camera around the scene.</li>
+        <li>Use your mouse wheel to zoom in and out.</li>
+      </ul> </div>
+      <p align="left">Thank you very much for visiting our website. We would really appreciate it if you'd take a minute and fill out this <a href="https://forms.gle/cFdj17yK4VafWXBS8" target="_blank">survey</a>. </p>
+    </div>
+</div>
 </body>
 </html>
